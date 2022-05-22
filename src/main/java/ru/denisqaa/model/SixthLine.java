@@ -1,11 +1,14 @@
 package ru.denisqaa.model;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class SixthLine {
 
-  private SeventhLine seventhLine;
+  private final SeventhLine seventhLine;
 
   @Override
   public String toString() {

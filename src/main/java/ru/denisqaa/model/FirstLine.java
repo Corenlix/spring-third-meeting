@@ -1,10 +1,13 @@
 package ru.denisqaa.model;
 
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class FirstLine {
-
+  @NonNull
   private SecondLine secondLine;
 
   @Override
